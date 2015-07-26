@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FADE35D51B65886F0020ADFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE35D41B65886F0020ADFD /* main.m */; };
+		FADE35D81B65886F0020ADFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE35D71B65886F0020ADFD /* AppDelegate.m */; };
+		FADE35DB1B65886F0020ADFD /* WakeWake.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FADE35D91B65886F0020ADFD /* WakeWake.xcdatamodeld */; };
+		FADE35DE1B65886F0020ADFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE35DD1B65886F0020ADFD /* ViewController.m */; };
+		FADE35E11B65886F0020ADFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADE35DF1B65886F0020ADFD /* Main.storyboard */; };
+		FADE35E31B65886F0020ADFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE35E21B65886F0020ADFD /* Images.xcassets */; };
+		FADE35E61B65886F0020ADFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADE35E41B65886F0020ADFD /* LaunchScreen.xib */; };
+		FADE35F21B65886F0020ADFD /* WakeWakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE35F11B65886F0020ADFD /* WakeWakeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FADE35EC1B65886F0020ADFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADE35C71B65886F0020ADFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADE35CE1B65886F0020ADFD;
+			remoteInfo = WakeWake;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FADE35CF1B65886F0020ADFD /* WakeWake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeWake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADE35D31B65886F0020ADFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADE35D41B65886F0020ADFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FADE35D61B65886F0020ADFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FADE35D71B65886F0020ADFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FADE35DA1B65886F0020ADFD /* WakeWake.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WakeWake.xcdatamodel; sourceTree = "<group>"; };
+		FADE35DC1B65886F0020ADFD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FADE35DD1B65886F0020ADFD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FADE35E01B65886F0020ADFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FADE35E21B65886F0020ADFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FADE35E51B65886F0020ADFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FADE35EB1B65886F0020ADFD /* WakeWakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakeWakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADE35F01B65886F0020ADFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADE35F11B65886F0020ADFD /* WakeWakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WakeWakeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADE35CC1B65886F0020ADFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADE35E81B65886F0020ADFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FADE35C61B65886F0020ADFD = {
+			isa = PBXGroup;
+			children = (
+				FADE35D11B65886F0020ADFD /* WakeWake */,
+				FADE35EE1B65886F0020ADFD /* WakeWakeTests */,
+				FADE35D01B65886F0020ADFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FADE35D01B65886F0020ADFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADE35CF1B65886F0020ADFD /* WakeWake.app */,
+				FADE35EB1B65886F0020ADFD /* WakeWakeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FADE35D11B65886F0020ADFD /* WakeWake */ = {
+			isa = PBXGroup;
+			children = (
+				FADE35D61B65886F0020ADFD /* AppDelegate.h */,
+				FADE35D71B65886F0020ADFD /* AppDelegate.m */,
+				FADE35DC1B65886F0020ADFD /* ViewController.h */,
+				FADE35DD1B65886F0020ADFD /* ViewController.m */,
+				FADE35DF1B65886F0020ADFD /* Main.storyboard */,
+				FADE35E21B65886F0020ADFD /* Images.xcassets */,
+				FADE35E41B65886F0020ADFD /* LaunchScreen.xib */,
+				FADE35D91B65886F0020ADFD /* WakeWake.xcdatamodeld */,
+				FADE35D21B65886F0020ADFD /* Supporting Files */,
+			);
+			path = WakeWake;
+			sourceTree = "<group>";
+		};
+		FADE35D21B65886F0020ADFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FADE35D31B65886F0020ADFD /* Info.plist */,
+				FADE35D41B65886F0020ADFD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FADE35EE1B65886F0020ADFD /* WakeWakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FADE35F11B65886F0020ADFD /* WakeWakeTests.m */,
+				FADE35EF1B65886F0020ADFD /* Supporting Files */,
+			);
+			path = WakeWakeTests;
+			sourceTree = "<group>";
+		};
+		FADE35EF1B65886F0020ADFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FADE35F01B65886F0020ADFD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FADE35CE1B65886F0020ADFD /* WakeWake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADE35F51B65886F0020ADFD /* Build configuration list for PBXNativeTarget "WakeWake" */;
+			buildPhases = (
+				FADE35CB1B65886F0020ADFD /* Sources */,
+				FADE35CC1B65886F0020ADFD /* Frameworks */,
+				FADE35CD1B65886F0020ADFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WakeWake;
+			productName = WakeWake;
+			productReference = FADE35CF1B65886F0020ADFD /* WakeWake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FADE35EA1B65886F0020ADFD /* WakeWakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADE35F81B65886F0020ADFD /* Build configuration list for PBXNativeTarget "WakeWakeTests" */;
+			buildPhases = (
+				FADE35E71B65886F0020ADFD /* Sources */,
+				FADE35E81B65886F0020ADFD /* Frameworks */,
+				FADE35E91B65886F0020ADFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADE35ED1B65886F0020ADFD /* PBXTargetDependency */,
+			);
+			name = WakeWakeTests;
+			productName = WakeWakeTests;
+			productReference = FADE35EB1B65886F0020ADFD /* WakeWakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADE35C71B65886F0020ADFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = BReginato;
+				TargetAttributes = {
+					FADE35CE1B65886F0020ADFD = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					FADE35EA1B65886F0020ADFD = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = FADE35CE1B65886F0020ADFD;
+					};
+				};
+			};
+			buildConfigurationList = FADE35CA1B65886F0020ADFD /* Build configuration list for PBXProject "WakeWake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FADE35C61B65886F0020ADFD;
+			productRefGroup = FADE35D01B65886F0020ADFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADE35CE1B65886F0020ADFD /* WakeWake */,
+				FADE35EA1B65886F0020ADFD /* WakeWakeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADE35CD1B65886F0020ADFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADE35E11B65886F0020ADFD /* Main.storyboard in Resources */,
+				FADE35E61B65886F0020ADFD /* LaunchScreen.xib in Resources */,
+				FADE35E31B65886F0020ADFD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADE35E91B65886F0020ADFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADE35CB1B65886F0020ADFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADE35DB1B65886F0020ADFD /* WakeWake.xcdatamodeld in Sources */,
+				FADE35D81B65886F0020ADFD /* AppDelegate.m in Sources */,
+				FADE35DE1B65886F0020ADFD /* ViewController.m in Sources */,
+				FADE35D51B65886F0020ADFD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADE35E71B65886F0020ADFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADE35F21B65886F0020ADFD /* WakeWakeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FADE35ED1B65886F0020ADFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADE35CE1B65886F0020ADFD /* WakeWake */;
+			targetProxy = FADE35EC1B65886F0020ADFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FADE35DF1B65886F0020ADFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADE35E01B65886F0020ADFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FADE35E41B65886F0020ADFD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADE35E51B65886F0020ADFD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FADE35F31B65886F0020ADFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FADE35F41B65886F0020ADFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FADE35F61B65886F0020ADFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WakeWake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FADE35F71B65886F0020ADFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WakeWake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FADE35F91B65886F0020ADFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WakeWakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakeWake.app/WakeWake";
+			};
+			name = Debug;
+		};
+		FADE35FA1B65886F0020ADFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WakeWakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakeWake.app/WakeWake";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADE35CA1B65886F0020ADFD /* Build configuration list for PBXProject "WakeWake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADE35F31B65886F0020ADFD /* Debug */,
+				FADE35F41B65886F0020ADFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADE35F51B65886F0020ADFD /* Build configuration list for PBXNativeTarget "WakeWake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADE35F61B65886F0020ADFD /* Debug */,
+				FADE35F71B65886F0020ADFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FADE35F81B65886F0020ADFD /* Build configuration list for PBXNativeTarget "WakeWakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADE35F91B65886F0020ADFD /* Debug */,
+				FADE35FA1B65886F0020ADFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FADE35D91B65886F0020ADFD /* WakeWake.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FADE35DA1B65886F0020ADFD /* WakeWake.xcdatamodel */,
+			);
+			currentVersion = FADE35DA1B65886F0020ADFD /* WakeWake.xcdatamodel */;
+			path = WakeWake.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FADE35C71B65886F0020ADFD /* Project object */;
+}
