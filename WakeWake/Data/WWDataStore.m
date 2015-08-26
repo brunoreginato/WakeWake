@@ -61,4 +61,8 @@
     return error != nil;
 }
 
+-(void)discartChanges {
+    [_context undo];
+}
+
 @end

@@ -16,5 +16,6 @@
 
 +(instancetype) instance;
 -(BOOL) saveChanges;
+-(void)discartChanges;
 
 @end

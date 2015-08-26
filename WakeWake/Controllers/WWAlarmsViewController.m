@@ -11,7 +11,8 @@
 
 @interface WWAlarmsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) NSArray *alarms;
+@property (strong, nonatomic) NSArray *alarms;
+@property (strong,nonatomic) WWAlarm *alarmToForm;
 @end
 
 @implementation WWAlarmsViewController
@@ -20,6 +21,10 @@
     [super viewDidLoad];
     
     [self getAlarms];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    _alarmToForm = nil;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,6 +47,25 @@
     [cell initWithAlarm: _alarms[indexPath.row]];
     
     return cell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"alarmForm"]) {
+        WWAlarmFormViewController *formAlarm = (WWAlarmFormViewController *)segue.destinationViewController;
+        [formAlarm initWithAlarm: _alarmToForm];
+    }
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+     _alarmToForm = _alarms[indexPath.row];
+    
+    [self performSegueWithIdentifier:@"alarmForm" sender:nil];
+}
+
+- (IBAction)addAlarm:(id)sender {
+    _alarmToForm = [[WWDataStore instance] newAlarm];
+    
+    [self performSegueWithIdentifier:@"alarmForm" sender:nil];
 }
 
 #pragma mark - WWDataSource+Alarm
