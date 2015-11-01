@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+        
     [self getAlarms];
 }
 
@@ -44,7 +44,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     WWAlarmTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
-    [cell initWithAlarm: _alarms[indexPath.row]];
+    [cell initWithAlarm: _alarms[indexPath.row] andIndexPath:indexPath];
     
     return cell;
 }
@@ -60,6 +60,10 @@
      _alarmToForm = _alarms[indexPath.row];
     
     [self performSegueWithIdentifier:@"alarmForm" sender:nil];
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 105.0f;
 }
 
 - (IBAction)addAlarm:(id)sender {

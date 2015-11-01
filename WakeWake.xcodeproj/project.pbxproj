@@ -16,6 +16,9 @@
 		FA24C6471B6D490A009D05A6 /* WWAlarmFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA24C6461B6D490A009D05A6 /* WWAlarmFormView.m */; };
 		FA24C64A1B6D4985009D05A6 /* WWAlarmFormLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA24C6491B6D4985009D05A6 /* WWAlarmFormLocationViewController.m */; };
 		FA24C64D1B6D49A5009D05A6 /* WWAlarmFormLocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA24C64C1B6D49A5009D05A6 /* WWAlarmFormLocationView.m */; };
+		FA2E76171BE5135B00C72958 /* UIColor+WWColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2E76161BE5135B00C72958 /* UIColor+WWColor.m */; };
+		FA2E761B1BE519D100C72958 /* WWButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2E761A1BE519D100C72958 /* WWButton.m */; };
+		FA2E76221BE64E9D00C72958 /* WWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2E76211BE64E9D00C72958 /* WWViewController.m */; };
 		FADE35D51B65886F0020ADFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE35D41B65886F0020ADFD /* main.m */; };
 		FADE35DB1B65886F0020ADFD /* WakeWake.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FADE35D91B65886F0020ADFD /* WakeWake.xcdatamodeld */; };
 		FADE35E11B65886F0020ADFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADE35DF1B65886F0020ADFD /* Main.storyboard */; };
@@ -56,6 +59,12 @@
 		FA24C6491B6D4985009D05A6 /* WWAlarmFormLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WWAlarmFormLocationViewController.m; path = Controllers/WWAlarmFormLocationViewController.m; sourceTree = "<group>"; };
 		FA24C64B1B6D49A5009D05A6 /* WWAlarmFormLocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WWAlarmFormLocationView.h; path = Views/WWAlarmFormLocationView.h; sourceTree = "<group>"; };
 		FA24C64C1B6D49A5009D05A6 /* WWAlarmFormLocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WWAlarmFormLocationView.m; path = Views/WWAlarmFormLocationView.m; sourceTree = "<group>"; };
+		FA2E76151BE5135B00C72958 /* UIColor+WWColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+WWColor.h"; path = "Constants/UIColor+WWColor.h"; sourceTree = "<group>"; };
+		FA2E76161BE5135B00C72958 /* UIColor+WWColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+WWColor.m"; path = "Constants/UIColor+WWColor.m"; sourceTree = "<group>"; };
+		FA2E76191BE519D100C72958 /* WWButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WWButton.h; path = Components/WWButton.h; sourceTree = "<group>"; };
+		FA2E761A1BE519D100C72958 /* WWButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WWButton.m; path = Components/WWButton.m; sourceTree = "<group>"; };
+		FA2E76201BE64E9D00C72958 /* WWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WWViewController.h; path = Components/WWViewController.h; sourceTree = "<group>"; };
+		FA2E76211BE64E9D00C72958 /* WWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WWViewController.m; path = Components/WWViewController.m; sourceTree = "<group>"; };
 		FADE35CF1B65886F0020ADFD /* WakeWake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeWake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADE35D31B65886F0020ADFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADE35D41B65886F0020ADFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -138,6 +147,26 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		FA2E76181BE5136100C72958 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FA2E76151BE5135B00C72958 /* UIColor+WWColor.h */,
+				FA2E76161BE5135B00C72958 /* UIColor+WWColor.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		FA2E761C1BE519D500C72958 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA2E76191BE519D100C72958 /* WWButton.h */,
+				FA2E761A1BE519D100C72958 /* WWButton.m */,
+				FA2E76201BE64E9D00C72958 /* WWViewController.h */,
+				FA2E76211BE64E9D00C72958 /* WWViewController.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
 		FADE35C61B65886F0020ADFD = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +190,8 @@
 		FADE35D11B65886F0020ADFD /* WakeWake */ = {
 			isa = PBXGroup;
 			children = (
+				FA2E761C1BE519D500C72958 /* Components */,
+				FA2E76181BE5136100C72958 /* Constants */,
 				FA0C52A01B66ECB6008D94B3 /* Model */,
 				FA0C529F1B66ECAC008D94B3 /* View */,
 				FA0C529E1B66EC9E008D94B3 /* Controller */,
@@ -307,6 +338,7 @@
 				FA0C52A31B66ECFC008D94B3 /* WWAlarm.m in Sources */,
 				FA0C52A91B66F232008D94B3 /* WWAlarmsViewController.m in Sources */,
 				FADE35DB1B65886F0020ADFD /* WakeWake.xcdatamodeld in Sources */,
+				FA2E76171BE5135B00C72958 /* UIColor+WWColor.m in Sources */,
 				FA24C6441B6D48E5009D05A6 /* WWAlarmFormViewController.m in Sources */,
 				FA0C529D1B66E58C008D94B3 /* WWDataStore.m in Sources */,
 				FADE35D51B65886F0020ADFD /* main.m in Sources */,
@@ -315,6 +347,8 @@
 				FA24C64A1B6D4985009D05A6 /* WWAlarmFormLocationViewController.m in Sources */,
 				FA0C52AC1B66F2E6008D94B3 /* WWAlarmTableViewCell.m in Sources */,
 				FA24C64D1B6D49A5009D05A6 /* WWAlarmFormLocationView.m in Sources */,
+				FA2E761B1BE519D100C72958 /* WWButton.m in Sources */,
+				FA2E76221BE64E9D00C72958 /* WWViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

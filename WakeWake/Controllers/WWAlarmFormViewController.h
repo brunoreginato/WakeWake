@@ -9,8 +9,9 @@
 #import "WWAlarmFormLocationViewController.h"
 #import "WWAlarm.h"
 #import <UIKit/UIKit.h>
+#import "WWViewController.h"
 
-@interface WWAlarmFormViewController : UIViewController
+@interface WWAlarmFormViewController : WWViewController
 
 -(void)initWithAlarm:(WWAlarm *)alarm;
 

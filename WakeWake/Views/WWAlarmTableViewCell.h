@@ -10,6 +10,6 @@
 
 @interface WWAlarmTableViewCell : UITableViewCell
 
--(void)initWithAlarm:(WWAlarm *)alarm;
+-(void)initWithAlarm:(WWAlarm *)alarm andIndexPath:(NSIndexPath *)indexPath;
 
 @end

@@ -10,7 +10,8 @@
 #import "WWDataStore.h"
 #import "WWDataStore+Alarm.h"
 #import "WWAlarmFormViewController.h"
+#import "WWViewController.h"
 
-@interface WWAlarmsViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+@interface WWAlarmsViewController : WWViewController <UITableViewDataSource,UITableViewDelegate>
 
 @end
