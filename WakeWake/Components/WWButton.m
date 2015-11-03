@@ -8,6 +8,7 @@
 
 #import "WWButton.h"
 #import "UIColor+WWColor.h"
+#import "UIFont+WWFont.h"
 
 @implementation WWButton
 
@@ -28,7 +29,9 @@
 
 -(void)setup {
     [self setTitleColor:[UIColor WWblue] forState:UIControlStateNormal];
-    [[self titleLabel] setFont:[UIFont fontWithName:@"Helvetica" size:28]];
+    [[self titleLabel] setFont:[UIFont WWlargeFontSize]];
+    
+    [self setBackgroundColor:[UIColor whiteColor]];
 }
 
 @end

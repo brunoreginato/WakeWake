@@ -39,8 +39,6 @@
     
     [[WWDataStore instance] saveChanges];
     
-    [self setupNavigationBarStyle];
-    
     return YES;
 }
 
@@ -82,14 +80,4 @@
     NSLog(@"Location updated!");
 }
 
-#pragma mark - NavigationBarStyle 
--(void)setupNavigationBarStyle {
-    UIImage *bg = [[UIImage imageNamed:@"app-bg"]
-     resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch];
-    
-    [[UINavigationBar appearance] setBackgroundImage:bg
-                                      forBarPosition:UIBarPositionAny
-                                          barMetrics:UIBarMetricsDefault];
-    
-}
 @end
