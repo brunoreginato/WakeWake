@@ -42,7 +42,7 @@
     [self.mainView setValuesToAlarm:_alarm];
     [[WWDataStore instance] saveChanges];
     
-    [self performSegueWithIdentifier:@"alarmLocationForm" sender:nil];
+//    [self performSegueWithIdentifier:@"alarmLocationForm" sender:nil];
 }
 
 #pragma mark - MainViewParser

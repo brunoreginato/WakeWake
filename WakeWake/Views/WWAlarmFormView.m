@@ -7,6 +7,7 @@
 //
 
 #import "WWAlarmFormView.h"
+#import "UIColor+WWColor.h"
 
 @interface WWAlarmFormView()
 @property (weak, nonatomic) IBOutlet UITextField *txtName;
@@ -26,7 +27,7 @@
     [super drawRect:rect];
     
     [self setupRadiusView];
-    [_sldRadius addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
+    [self setupSliderRadius];
 }
 
 -(void)fillWithAlarm:(WWAlarm *)alarm {
@@ -58,5 +59,12 @@
     _radiusContainerView.layer.cornerRadius = _radiusContainerView.frame.size.height/2;
 }
 
+#pragma mark - SliderRadius UI setups
+-(void)setupSliderRadius {
+    [_sldRadius addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    [_sldRadius setThumbImage:[_sldRadius thumbImageForState:UIControlStateNormal] forState:UIControlStateNormal];
+    _sldRadius.thumbTintColor = [UIColor WWaqua];
+}
 
 @end

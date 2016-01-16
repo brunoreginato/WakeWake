@@ -26,4 +26,12 @@
     return [UIColor colorWithRed:61.0/255.0 green:119.0/255.0 blue:195.0/255.0 alpha:1.0f];
 }
 
++(UIColor *)WWaqua {
+    return [UIColor colorWithRed:0.0 green:1.0 blue:210.0/255.0 alpha:1.0f];
+}
+
++(UIColor *)WWPink {
+    return [UIColor colorWithRed:1.0 green:35.0/255.0 blue:141.0/255.0 alpha:1.0f];
+}
+
 @end

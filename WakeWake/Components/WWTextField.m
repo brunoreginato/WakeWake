@@ -33,6 +33,8 @@
 }
 
 -(void)setup {
+    [self layoutIfNeeded];
+    
     [self setFont: [UIFont WWmediumFontSize]];
     [self setTextColor: [UIColor whiteColor]];
     self.delegate = self;

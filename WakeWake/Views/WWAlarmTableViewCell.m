@@ -8,11 +8,16 @@
 
 #import "WWAlarmTableViewCell.h"
 #import "UIColor+WWColor.h"
+#import "UIFont+WWFont.h"
 
 @interface WWAlarmTableViewCell()
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *radius;
-@property (weak, nonatomic) IBOutlet UISwitch *active;
+
+@property (weak, nonatomic) IBOutlet UIImageView *statusImage;
+@property (weak, nonatomic) IBOutlet UILabel *statusOnLabel;
+@property (weak, nonatomic) IBOutlet UILabel *statusOffLabel;
+
 @property (weak,nonatomic) NSIndexPath *indexPath;
 @end
 
@@ -32,8 +37,8 @@
     _indexPath = indexPath;
     _name.text = alarm.name;
     _radius.text = [NSString stringWithFormat:@"%dm",[alarm.radius integerValue]];
-    _active.on = alarm.active.boolValue;
     
+    [self setupStatusLabelForAlarm:alarm];
     [self setupBackgroudColor];
 }
 
@@ -53,6 +58,30 @@
     }
     
     [self.contentView setBackgroundColor:bgColor];
+}
+
+-(void) setupStatusLabelForAlarm:(WWAlarm *)alarm {
+    bool isActive = alarm.active.boolValue;
+    
+    if (isActive) {
+        _statusImage.image = [UIImage imageNamed:@"bell-on"];
+        
+        [_statusOffLabel setFont: [UIFont WWsmallFontSize]];
+        [_statusOffLabel setTextColor:[UIColor whiteColor]];
+        
+        [_statusOnLabel setFont: [UIFont WWsmallFontBold]];
+        [_statusOnLabel setTextColor:[UIColor WWaqua]];
+        
+    } else {
+        _statusImage.image = [UIImage imageNamed:@"bell-off"];
+        
+        [_statusOffLabel setFont: [UIFont WWsmallFontBold]];
+        [_statusOffLabel setTextColor:[UIColor WWPink]];
+        
+        [_statusOnLabel setFont: [UIFont WWsmallFontSize]];
+        [_statusOnLabel setTextColor:[UIColor whiteColor]];
+    }
+    
 }
 
 @end

@@ -16,4 +16,7 @@
 
 +(UIColor *)WWblue;
 
++(UIColor *)WWaqua;
++(UIColor *)WWPink;
+
 @end

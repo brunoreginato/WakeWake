@@ -13,4 +13,9 @@
 +(UIFont *)WWsmallFontSize;
 +(UIFont *)WWmediumFontSize;
 +(UIFont *)WWlargeFontSize;
+
++(UIFont *)WWmicroFontBold;
++(UIFont *)WWsmallFontBold;
++(UIFont *)WWmediumFontBold;
++(UIFont *)WWlargeFontBold;
 @end
