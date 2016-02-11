@@ -8,8 +8,13 @@
 #import "WWAlarm.h"
 #import <UIKit/UIKit.h>
 
+@protocol WWAlarmTableViewCellDelegate <NSObject>
+-(void)didTapActiveAtIndexPath:(NSIndexPath *)indexPath;
+@end
+
 @interface WWAlarmTableViewCell : UITableViewCell
 
+@property (weak,nonatomic) id<WWAlarmTableViewCellDelegate> delegate;
 -(void)initWithAlarm:(WWAlarm *)alarm andIndexPath:(NSIndexPath *)indexPath;
 
 @end

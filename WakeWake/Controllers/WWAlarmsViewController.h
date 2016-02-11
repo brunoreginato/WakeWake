@@ -12,6 +12,6 @@
 #import "WWAlarmFormViewController.h"
 #import "WWViewController.h"
 
-@interface WWAlarmsViewController : WWViewController <UITableViewDataSource,UITableViewDelegate>
+@interface WWAlarmsViewController : WWViewController <UITableViewDataSource,UITableViewDelegate,WWAlarmTableViewCellDelegate>
 
 @end

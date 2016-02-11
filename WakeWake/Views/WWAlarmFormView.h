@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "WWAlarm.h"
+#import <MapKit/MapKit.h>
 
-@interface WWAlarmFormView : UIView
+@interface WWAlarmFormView : UIView <MKMapViewDelegate>
 
 -(void)fillWithAlarm:(WWAlarm *)alarm;
 -(void)setValuesToAlarm:(WWAlarm *)alarm;

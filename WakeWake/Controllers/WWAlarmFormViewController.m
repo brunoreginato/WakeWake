@@ -8,7 +8,6 @@
 
 #import "WWAlarmFormViewController.h"
 #import "WWAlarmFormView.h"
-#import "WWAlarmFormLocationViewController.h"
 #import "WWDataStore+Alarm.h"
 
 @interface WWAlarmFormViewController ()
@@ -33,8 +32,7 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:@"alarmLocationForm"]) {
-        WWAlarmFormLocationViewController *formLocation = (WWAlarmFormLocationViewController *) segue.destinationViewController;
-        [formLocation initWithAlarm:_alarm];
+        //TODO: go to repeat screen
     }
 }
 

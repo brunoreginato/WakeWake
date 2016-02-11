@@ -17,5 +17,7 @@
 @property (nonatomic, retain) NSNumber * longitude;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * radius;
+@property (nonatomic, retain) NSString * soundName;
+@property (nonatomic, retain) NSNumber * identifier;
 
 @end

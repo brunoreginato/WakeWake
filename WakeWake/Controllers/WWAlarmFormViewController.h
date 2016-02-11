@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 BReginato. All rights reserved.
 //
 
-#import "WWAlarmFormLocationViewController.h"
 #import "WWAlarm.h"
 #import <UIKit/UIKit.h>
 #import "WWViewController.h"
+#import <MapKit/MapKit.h>
 
 @interface WWAlarmFormViewController : WWViewController
 

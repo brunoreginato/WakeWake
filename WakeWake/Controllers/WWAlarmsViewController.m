@@ -8,6 +8,7 @@
 
 #import "WWAlarmTableViewCell.h"
 #import "WWAlarmsViewController.h"
+#import "WWLocationManager.h"
 
 @interface WWAlarmsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -45,6 +46,7 @@
     WWAlarmTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     [cell initWithAlarm: _alarms[indexPath.row] andIndexPath:indexPath];
+    cell.delegate = self;
     
     return cell;
 }
@@ -77,5 +79,22 @@
     _alarms = [[WWDataStore instance] alarms];
     
     [_tableView reloadData];
+}
+
+#pragma mark - WWAlarmTableViewCellDelegate
+-(void)didTapActiveAtIndexPath:(NSIndexPath *)indexPath {
+    WWAlarm *alarm = _alarms[indexPath.row];
+    alarm.active = @(!alarm.active.boolValue);
+    
+    if(alarm.active.boolValue) {
+        [[WWLocationManager manager] startMonitoringAlarm:alarm];
+    }
+    else {
+        [[WWLocationManager manager] stopMonitoring:alarm];
+    }
+    
+    [[WWDataStore instance] saveChanges];
+    
+    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
 }
 @end

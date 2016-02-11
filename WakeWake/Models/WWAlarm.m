@@ -16,5 +16,7 @@
 @dynamic longitude;
 @dynamic name;
 @dynamic radius;
+@dynamic identifier;
+@dynamic soundName;
 
 @end

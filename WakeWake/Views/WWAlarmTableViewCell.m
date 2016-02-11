@@ -42,6 +42,7 @@
     [self setupBackgroudColor];
 }
 
+
 -(void)setupBackgroudColor {
     UIColor *bgColor;
     
@@ -82,6 +83,12 @@
         [_statusOnLabel setTextColor:[UIColor whiteColor]];
     }
     
+}
+
+- (IBAction)didTapActive:(id)sender {
+    if(_delegate) {
+        [_delegate didTapActiveAtIndexPath:self.indexPath];
+    }
 }
 
 @end

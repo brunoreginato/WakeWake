@@ -6,36 +6,38 @@
 //  Copyright (c) 2015 BReginato. All rights reserved.
 //
 #import "WWAlarm.h"
-//#import "WWDataStore.h"
 #import "WWDataStore+Alarm.h"
+#import "WWLocationManager.h"
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-@property (strong,nonatomic) CLLocationManager *locationManager;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    _locationManager = [[CLLocationManager alloc] init];
-    _locationManager.delegate = self;
-    
-    if ([_locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
-        [_locationManager requestAlwaysAuthorization];
-    }
     
     // Override point for customization after application launch.
-    
     WWAlarm * alarm = [[WWDataStore instance] newAlarm];
     alarm.active = [NSNumber numberWithBool:NO];
     alarm.name = @"Alarme 1";
     alarm.radius = [NSNumber numberWithDouble:500.0];
+    alarm.latitude = @(37.3322399);
+    alarm.longitude = @(-122.0307759);
+    alarm.identifier = @(1);
+    
+    [[WWLocationManager manager] startMonitoringAlarm:alarm];
     
     WWAlarm * alarm2 = [[WWDataStore instance] newAlarm];
     alarm2.active = [NSNumber numberWithBool:YES];
     alarm2.name = @"Alarme 2";
     alarm2.radius = [NSNumber numberWithDouble:250.0];
+    alarm2.latitude = @(37.3998515);
+    alarm2.longitude = @(-122.107459);
+    alarm2.identifier = @(1);
+    
+    [[WWLocationManager manager] startMonitoringAlarm:alarm2];
     
     [[WWDataStore instance] saveChanges];
     
@@ -49,8 +51,6 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    
-    [_locationManager startMonitoringSignificantLocationChanges];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -59,9 +59,6 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    
-    [_locationManager stopMonitoringSignificantLocationChanges];
-    [_locationManager startUpdatingLocation];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -72,12 +69,6 @@
 - (NSURL *)applicationDocumentsDirectory {
     // The directory the application uses to store the Core Data store file. This code uses a directory named "BR.WakeWake" in the application's documents directory.
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
-}
-
-#pragma  mark - CLLocationManagerDelegate
--(void) locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
-{
-    NSLog(@"Location updated!");
 }
 
 @end
